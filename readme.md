@@ -1,6 +1,6 @@
-# Library management system
+# Professional Mountain resort web site
 
-An automated system for managing a public libraries. 
+An example professional web site. 
 
 ## Subheader
 
