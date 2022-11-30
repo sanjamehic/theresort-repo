@@ -23,19 +23,18 @@
     margin: 0 auto;
   }
 
-  button.btn {
+  input.btn {
     padding: 0 20px;
     height: 40px;
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
-
     background-color: #FCA311;
     border-radius: 2px;
     margin-top: 20px;
     cursor: pointer;
   }
-  button.btn:hover {
+  input.btn:hover {
     background-color: #d2932d;
   }
 
@@ -52,6 +51,12 @@
 
   a#logo.navbar-brand {
     font-size: 30px;
+  }
+
+  p#logo {
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    margin: 0 0 10px 0;
   }
 
 
@@ -87,12 +92,11 @@ color: #FCA311;
   #picture > img, .card {
     width: 100%;
     margin-bottom: 20px;
-
   }
 
+ 
 
-
-  #pricing {
+  #services {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -104,16 +108,42 @@ color: #FCA311;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    display: flex;
+    align-content: center;
     width: calc(100% / 3);
-    margin:20px 20px 20px 0;
+    margin:20px 20px 20px 0px;
+    padding-bottom: 2%;
     background-color: #E5E5E5;
     border-radius: 0;
-  }
-  .product:last-child {
-    margin-right: 0;
+    justify-content: space-between;
   }
 
-  .product > .level {
+  @media (min-width:800px) {
+    .product:last-child {
+      margin-right: 0;
+    }
+  }
+  
+ .service-content {
+  width: 100%;
+ }
+
+ .service-content > h2{
+  margin-top: 5%;
+  height: 50%;
+ }
+
+ .services-button {
+  height: 50%;
+ 
+ }
+
+ .product > .service-content > p {
+  margin-bottom: 10%;
+ }
+ 
+   
+  .product > .service-content > .level {
     background-color: #000000;
     color: #E5E5E5;
     padding: 15px 0;
@@ -126,28 +156,12 @@ color: #FCA311;
     margin-top: 15px;
   }
 
-  .product > ol {
-    margin: 15px 0;
-  }
+  
 
-  .product > ol > li {
-    padding: 5px 0;
-  }
-
-  .product > button {
-    border: 0;
-    margin: 40px 0;
-    background-color: #FCA311;
-    font-weight: 400;
-  }
-
-  .product > button:hover {
-    background-color: #d2932d;
-    transition: background-color 1s;
-  }
+  
 
   @media (max-width: 800px) {
-    #pricing {
+    #services {
       flex-direction: column;
     }
     .product {
@@ -155,6 +169,7 @@ color: #FCA311;
       width: 100%;
       margin: 0 auto;
       margin-bottom: 10px;
+      
     }
   }
 
@@ -164,7 +179,7 @@ color: #FCA311;
 
 
   .card-title {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   #newsletter {
@@ -233,8 +248,6 @@ color: #FCA311;
     color: rgb(159, 156, 156);
   }
 
-
-
 footer a {
     color: orange;
     text-decoration: none;
@@ -243,3 +256,120 @@ footer a {
 footer ul {
     list-style-type: none;
   }
+
+  #gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  #gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    
+  }
+  #gallery img:hover { 
+    transform: scale(1.05);
+    transition: 0.2 all;
+  }
+  
+  #gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+  #about > .card {
+    margin-top: 30px;
+    border: none;
+    background-color: #E5E5E5;
+
+
+  }
+
+  #gallery-team .img-about img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+
+  #gallery-team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+
+  blockquote {
+    margin: 10px;
+}
+
+blockquote p {
+    padding: 15px;
+   
+   
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+.card-body {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.contact-form, #address  {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #E5E5E5;
+  padding: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#address {
+ background-color: transparent;
+ padding: 0%;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.reservation
+{
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: #E5E5E5;
+  padding: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
