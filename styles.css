@@ -131,15 +131,17 @@ color: #FCA311;
  .service-content > h2{
   margin-top: 5%;
   height: 50%;
+  margin-bottom: 0;
  }
 
- .services-button {
-  height: 50%;
+ .service-button {
+  margin-block: 10%;
+  
  
  }
 
  .product > .service-content > p {
-  margin-bottom: 10%;
+  margin-top: 0%;
  }
  
    
@@ -155,10 +157,6 @@ color: #FCA311;
   .product > h2 {
     margin-top: 15px;
   }
-
-  
-
-  
 
   @media (max-width: 800px) {
     #services {
