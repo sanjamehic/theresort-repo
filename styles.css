@@ -74,6 +74,15 @@ a#logo.navbar-brand {
     }
 }
 
+
+
+@media (max-width:800px) {
+  .navbar>.container-fluid {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
 p#logo {
   font-family: 'Dancing Script';
   font-size: 30px;
